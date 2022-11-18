@@ -1,5 +1,5 @@
 import React from "react";
-import { AdultNav } from "../../molecules";
+import { AdultNav, Footer } from "../../molecules";
 import title from "../../../assets/movie-title2.webp";
 import {
   FaAngleLeft,
@@ -108,10 +108,8 @@ export const HomeAdults = () => {
           <div style={{}}>
             <div className="card-container"
               style={{
-                display: "grid",
-                gridAutoColumns: "200px",
-                gridAutoRows: "150px",
-                gridTemplateColumns: "1fr 1fr 1fr 1fr 1fr 1fr",
+                display: "flex",
+                overflow: "hidden",
                 gap: "8px", 
                 color: "white", borderRadius: "5px"
               }}
@@ -155,14 +153,267 @@ export const HomeAdults = () => {
               <Card
               imgs={Data[12] .image}
               link={Data[12] .link} />
-              <div>
+            </div>
+            <div style={{position: "relative", display: "flex", justifyContent: "space-between", color: "white", zIndex: "2", top: "-100px", fontSize: "3rem"}}>
               <FaAngleLeft />
               <FaAngleRight />
-              </div>
             </div>
           </div>    
         </div>
       </div>
+      <div style={{ width: "100%", paddingLeft: "50px", height: "25vh", }}>
+        <div
+          style={{ width: "100%", position : "relative", marginTop: "50px", }}
+        >
+          <p className="banner-text" style={{ color: "white", marginTop: "50px", fontSize: "1.1rem", marginBottom: "16px", }}>
+            Award-Winning TV Dramas
+          </p>
+          <div style={{}}>
+            <div className="card-container"
+              style={{
+                display: "flex",
+                overflow: "hidden",
+                gap: "8px", 
+                color: "white", borderRadius: "5px"
+              }}
+            >
+              <Card
+              imgs={Data[0] .image}
+              link={Data[0] .link} />
+              <Card
+              imgs={Data[1] .image}
+              link={Data[1] .link} />
+              <Card
+              imgs={Data[2] .image}
+              link={Data[2] .link} />
+              <Card
+              imgs={Data[3] .image}
+              link={Data[3] .link} />
+              <Card
+              imgs={Data[4] .image}
+              link={Data[4] .link} />
+              <Card
+              imgs={Data[5] .image}
+              link={Data[5] .link} />
+              <Card
+              imgs={Data[6] .image}
+              link={Data[6] .link} />
+              <Card
+              imgs={Data[7] .image}
+              link={Data[7] .link} />
+              <Card
+              imgs={Data[8] .image}
+              link={Data[8] .link} />
+              <Card
+              imgs={Data[9] .image}
+              link={Data[9] .link} />
+              <Card
+              imgs={Data[10] .image}
+              link={Data[10] .link} />
+              <Card
+              imgs={Data[11] .image}
+              link={Data[11] .link} />
+              <Card
+              imgs={Data[12] .image}
+              link={Data[12] .link} />
+            </div>
+            <div style={{position: "relative", display: "flex", justifyContent: "space-between", color: "white", zIndex: "2", top: "-100px", fontSize: "3rem"}}>
+              <FaAngleLeft />
+              <FaAngleRight />
+            </div>
+          </div>    
+        </div>
+      </div>
+      <div style={{ width: "100%", paddingLeft: "50px", height: "25vh", }}>
+        <div
+          style={{ width: "100%", position : "relative", marginTop: "50px", }}
+        >
+          <p className="banner-text" style={{ color: "white", marginTop: "50px", fontSize: "1.1rem", marginBottom: "16px", }}>
+            Award-Winning TV Dramas
+          </p>
+          <div style={{}}>
+            <div className="card-container"
+              style={{
+                display: "flex",
+                overflow: "hidden",
+                gap: "8px", 
+                color: "white", borderRadius: "5px"
+              }}
+            >
+              <Card
+              imgs={Data[0] .image}
+              link={Data[0] .link} />
+              <Card
+              imgs={Data[1] .image}
+              link={Data[1] .link} />
+              <Card
+              imgs={Data[2] .image}
+              link={Data[2] .link} />
+              <Card
+              imgs={Data[3] .image}
+              link={Data[3] .link} />
+              <Card
+              imgs={Data[4] .image}
+              link={Data[4] .link} />
+              <Card
+              imgs={Data[5] .image}
+              link={Data[5] .link} />
+              <Card
+              imgs={Data[6] .image}
+              link={Data[6] .link} />
+              <Card
+              imgs={Data[7] .image}
+              link={Data[7] .link} />
+              <Card
+              imgs={Data[8] .image}
+              link={Data[8] .link} />
+              <Card
+              imgs={Data[9] .image}
+              link={Data[9] .link} />
+              <Card
+              imgs={Data[10] .image}
+              link={Data[10] .link} />
+              <Card
+              imgs={Data[11] .image}
+              link={Data[11] .link} />
+              <Card
+              imgs={Data[12] .image}
+              link={Data[12] .link} />
+            </div>
+            <div style={{position: "relative", display: "flex", justifyContent: "space-between", color: "white", zIndex: "2", top: "-100px", fontSize: "3rem"}}>
+              <FaAngleLeft />
+              <FaAngleRight />
+            </div>
+          </div>    
+        </div>
+      </div>
+      <div style={{ width: "100%", paddingLeft: "50px", height: "25vh", }}>
+        <div
+          style={{ width: "100%", position : "relative", marginTop: "50px", }}
+        >
+          <p className="banner-text" style={{ color: "white", marginTop: "50px", fontSize: "1.1rem", marginBottom: "16px", }}>
+            Award-Winning TV Dramas
+          </p>
+          <div style={{}}>
+            <div className="card-container"
+              style={{
+                display: "flex",
+                overflow: "hidden",
+                gap: "8px", 
+                color: "white", borderRadius: "5px"
+              }}
+            >
+              <Card
+              imgs={Data[0] .image}
+              link={Data[0] .link} />
+              <Card
+              imgs={Data[1] .image}
+              link={Data[1] .link} />
+              <Card
+              imgs={Data[2] .image}
+              link={Data[2] .link} />
+              <Card
+              imgs={Data[3] .image}
+              link={Data[3] .link} />
+              <Card
+              imgs={Data[4] .image}
+              link={Data[4] .link} />
+              <Card
+              imgs={Data[5] .image}
+              link={Data[5] .link} />
+              <Card
+              imgs={Data[6] .image}
+              link={Data[6] .link} />
+              <Card
+              imgs={Data[7] .image}
+              link={Data[7] .link} />
+              <Card
+              imgs={Data[8] .image}
+              link={Data[8] .link} />
+              <Card
+              imgs={Data[9] .image}
+              link={Data[9] .link} />
+              <Card
+              imgs={Data[10] .image}
+              link={Data[10] .link} />
+              <Card
+              imgs={Data[11] .image}
+              link={Data[11] .link} />
+              <Card
+              imgs={Data[12] .image}
+              link={Data[12] .link} />
+            </div>
+            <div style={{position: "relative", display: "flex", justifyContent: "space-between", color: "white", zIndex: "2", top: "-100px", fontSize: "3rem"}}>
+              <FaAngleLeft />
+              <FaAngleRight />
+            </div>
+          </div>    
+        </div>
+      </div>
+      <div style={{ width: "100%", paddingLeft: "50px", height: "25vh", }}>
+        <div
+          style={{ width: "100%", position : "relative", marginTop: "50px", }}
+        >
+          <p className="banner-text" style={{ color: "white", marginTop: "50px", fontSize: "1.1rem", marginBottom: "16px", }}>
+            Award-Winning TV Dramas
+          </p>
+          <div style={{}}>
+            <div className="card-container"
+              style={{
+                display: "flex",
+                overflow: "hidden",
+                gap: "8px", 
+                color: "white", borderRadius: "5px"
+              }}
+            >
+              <Card
+              imgs={Data[0] .image}
+              link={Data[0] .link} />
+              <Card
+              imgs={Data[1] .image}
+              link={Data[1] .link} />
+              <Card
+              imgs={Data[2] .image}
+              link={Data[2] .link} />
+              <Card
+              imgs={Data[3] .image}
+              link={Data[3] .link} />
+              <Card
+              imgs={Data[4] .image}
+              link={Data[4] .link} />
+              <Card
+              imgs={Data[5] .image}
+              link={Data[5] .link} />
+              <Card
+              imgs={Data[6] .image}
+              link={Data[6] .link} />
+              <Card
+              imgs={Data[7] .image}
+              link={Data[7] .link} />
+              <Card
+              imgs={Data[8] .image}
+              link={Data[8] .link} />
+              <Card
+              imgs={Data[9] .image}
+              link={Data[9] .link} />
+              <Card
+              imgs={Data[10] .image}
+              link={Data[10] .link} />
+              <Card
+              imgs={Data[11] .image}
+              link={Data[11] .link} />
+              <Card
+              imgs={Data[12] .image}
+              link={Data[12] .link} />
+            </div>
+            <div style={{position: "relative", display: "flex", justifyContent: "space-between", color: "white", zIndex: "2", top: "-100px", fontSize: "3rem"}}>
+              <FaAngleLeft />
+              <FaAngleRight />
+            </div>
+          </div>    
+        </div>
+      </div>
+      <Footer />
     </>
   );
 };

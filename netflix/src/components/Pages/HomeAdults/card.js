@@ -11,11 +11,11 @@ function Card(props) {
                     <img src={props.imgs} alt="test"></img>
                     </a>
                     <div
-                    style={{ display: "flex", justifyContent: "space-between" }}
+                    style={{ display: "flex", justifyContent: "space-between", }}
                   >
                     <span
                       style={{
-                        display: "flex",
+                        display: "none",
                         gap: "8px",
                         fontSize: "1.5rem",
                       }}
@@ -24,9 +24,20 @@ function Card(props) {
                       <FaPlusCircle />
                       <FaRegThumbsUp />
                     </span>
-                    <div style={{ fontSize: "1.5rem" }}>
+                    <div style={{ fontSize: "1.5rem", display: "none" }}>
                       <FaChevronCircleDown />
                     </div>
+                  </div>
+                  <div style={{backgroundColor: "black", display: "none"}}>
+                  <span style={{color: "limegreen", fontWeight: "bold"}}>97% Match</span>
+                  <button style={{border: "1px solid grey", backgroundColor: "transparent", color: "white", padding: "3px"}}>18+</button>
+                  <span>11 Seasons</span>
+                  <button style={{border: "1px solid grey", backgroundColor: "transparent", color: "white", padding: "3px"}}>HD</button>
+                  </div>
+                  <div style={{display: 'none'}}>
+                    <span>Suspenseful</span>
+                    <span style={{textDecoration: "dot",}}>Exciting</span>
+                    <span>Fantasy TV Show</span>
                   </div>
                 </div>
             </div>
