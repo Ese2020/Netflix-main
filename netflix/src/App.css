@@ -1,0 +1,966 @@
+:root {
+  --btn-red: #e50914;
+  --btn-red-2: #e40914;
+  --btn-white: #fffff7;
+  --footer-grey: #737373;
+  --register-btn: #333;
+  --checkblue: #0071eb;
+  --landing-h1: 3.125rem;
+  --landing-p: 1.625rem;
+  --landing-p-2: 1.2rem;
+  --btn-font-text-1: 1rem;
+  --btn-font-text-2: 0.8rem;
+  --btn-border-radius: 0.3rem;
+  --font-family-bebas: "Bebas Neue", cursive;
+  --font-family-sans: "Open Sans", sans-serif;
+  --font-family-segeo: "Segoe UI", Tahoma, Geneva, Verdana, UI, Roboto, Ubuntu,
+    sans-serif;
+  --font-weight-300: 300;
+  --font-weight-400: 400;
+  --font-weight-500: 500;
+  --font-weight-600: 600;
+  --font-weight-700: 700;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family-sans);
+}
+
+body {
+  background: #141414;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/* landing page */
+
+.landing-nav-btn {
+  background-color: var(--btn-red);
+  color: var(--btn-white);
+  font-size: var(--btn-font-text-1);
+  border-radius: var(--btn-border-radius);
+  padding: 7px 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.landing-logo {
+  max-width: 100%;
+}
+
+.landing-header-contain {
+  background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/f669a8f4-de1e-49d7-bb56-c9bd1f4a9069/fbe6b535-b521-4096-929b-5bf1d6a7f700/NG-en-20221031-popsignuptwoweeks-perspective_alpha_website_medium.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.landing-header {
+  background: rgba(0, 0, 0, 0.4);
+  background-image: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.8) 0,
+    transparent 60%,
+    rgba(0, 0, 0, 0.8)
+  );
+}
+
+.landing-h1 {
+  font-size: var(--landing-h1);
+  text-align: center;
+  color: var(--btn-white);
+  font-family: var(--font-family-sans);
+  font-weight: var(--font-weight-600);
+  width: 40rem;
+  line-height: 1.2em;
+}
+
+.landing-p {
+  font-size: var(--landing-p);
+  font-family: var(--font-family-sans);
+  font-weight: var(--font-weight-400);
+  line-height: 2em;
+  text-align: center;
+  color: var(--btn-white);
+}
+
+.landing-p-2 {
+  font-size: var(--landing-p-2);
+  font-family: var(--font-family-sans);
+  font-weight: var(--font-weight-400);
+  text-align: center;
+  color: var(--btn-white);
+  padding: 1rem 0rem;
+}
+
+.holder {
+  display: flex;
+  justify-content: center;
+  padding-top: 7rem;
+}
+
+.holder-2,
+.holder-3 {
+  display: flex;
+  justify-content: center;
+}
+
+.email-holder {
+  display: flex;
+  justify-content: center;
+  margin: 0.5rem 0rem 2.5rem 0rem;
+}
+
+.email-holder-contain {
+  width: 43rem;
+  display: flex;
+}
+
+.cta-b {
+  width: 65%;
+}
+.landing-email-input {
+  padding: 1rem;
+  min-height: 60px;
+  width: 100%;
+  white-space: none;
+  margin-top: 0rem;
+  font-size: 0.9rem;
+  border: none;
+}
+
+.landing-email-input:focus {
+  border: none;
+  outline: none;
+}
+
+.cta-b {
+  position: relative;
+}
+
+.floating-label {
+  box-sizing: border-box;
+  position: absolute;
+  top: 30%;
+  left: 1rem;
+  font-size: 18px;
+  cursor: text;
+  color: #8c8c8c;
+}
+
+input:focus ~ .floating-label,
+input:valid ~ .floating-label {
+  font-size: 12px;
+  font-weight: bold;
+  transform: translateY(-55%);
+  transition: font 0.1s ease, top 0.1s ease, transform 0.1s ease;
+}
+
+.landing-email-btn {
+  background-color: var(--btn-red-2);
+  font-family: var(--font-family-sans);
+  padding: 0.5rem 1.8rem;
+  color: var(--btn-white);
+  border: none;
+  font-size: var(--landing-p);
+  min-height: 60px;
+}
+
+.landing-email-btn:hover {
+  background: #f40612;
+  box-shadow: 0 1px 0 rgb(0 0 0 / 45%);
+  cursor: pointer;
+}
+
+.landing-email-btn:focus {
+  background: #f40612;
+  box-shadow: 0 1px 0 rgb(0 0 0 / 55%);
+}
+
+.s-email {
+  font-size: 1.2rem;
+}
+
+.cta {
+  padding-right: 0.5rem;
+}
+
+/* landing page - enjoy section  */
+.enjoy-h1 {
+  font-size: var(--landing-h1);
+  font-family: var(--font-family-sans);
+  font-weight: var(--font-weight-500);
+  color: var(--btn-white);
+  line-height: 1.1;
+  margin-bottom: 0.5rem;
+}
+
+.enjoy-p {
+  font-size: 1.5rem;
+  font-family: var(--font-family-sans);
+  font-weight: var(--font-weight-400);
+  color: var(--btn-white);
+  margin: 0.75em 0 0.25em;
+}
+
+.story-tell {
+  margin: -10% -5% -5% 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.tv {
+  position: relative;
+  z-index: 2;
+  border: 0;
+  height: auto;
+  max-width: 100%;
+}
+
+.story-tv {
+  height: 100%;
+  left: 50%;
+  max-height: 54%;
+  max-width: 73%;
+  position: absolute;
+  top: 46%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.tv-video {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+/* landing page = download section */
+
+.download-img {
+  border: 0;
+  height: auto;
+  max-width: 100%;
+}
+
+.download-animate {
+  align-items: center;
+  background: #000;
+  border: 2px solid hsla(0, 0%, 100%, 0.25);
+  border-radius: 0.75em;
+  bottom: 8%;
+  box-shadow: 0 0 2em 0 #000;
+  display: flex;
+  left: 55%;
+  margin: 0 auto;
+  min-width: 15em;
+  padding: 0.25em 0.65em;
+  position: absolute;
+  transform: translateX(-50%);
+  width: 60%;
+  padding: 0.5em 0.75em;
+}
+
+.download-card-img {
+  flex-grow: 0;
+  flex-shrink: 0;
+  margin: 0 1em 0 0;
+}
+
+.small-img {
+  height: 4.5em;
+  max-width: 100%;
+}
+
+.download-card-text {
+  flex-grow: 1;
+  flex-shrink: 1;
+  margin: 0.3em 0;
+}
+
+.text-0 {
+  font-size: 1em;
+  font-family: var(--font-family-sans);
+  font-weight: var(--font-weight-500);
+  color: var(--btn-white);
+}
+
+.text-1 {
+  font-size: 0.9em;
+  color: #0071eb;
+  font-weight: var(--font-weight-400);
+  font-family: var(--font-family-sans);
+}
+
+.download-card-custom {
+  background: url(https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/download-icon.gif)
+    50% no-repeat;
+  background-size: 100%;
+  content: "";
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 0;
+  height: 3em;
+  outline: 2px solid #000;
+  outline-offset: -2px;
+  width: 3em;
+}
+
+.dn-h1 {
+  font-size: var(--landing-h1);
+  font-weight: var(--font-weight-500);
+  color: var(--btn-white);
+}
+
+.dn-h2 {
+  font-size: var(--landing-p);
+  font-weight: var(--font-weight-400);
+  color: var(--btn-white);
+}
+
+/* landing page watch */
+
+.watch-h1 {
+  font-size: var(--landing-h1);
+  font-family: var(--font-family-sans);
+  font-weight: var(--font-weight-500);
+  color: var(--btn-white);
+  line-height: 1.1;
+  margin-bottom: 0.5rem;
+}
+
+.watch-h2 {
+  font-size: 1.5rem;
+  font-family: var(--font-family-sans);
+  font-weight: var(--font-weight-400);
+  color: var(--btn-white);
+  margin: 0.75em 0 0.25em;
+}
+
+/* landing page kids */
+
+.kids-img {
+  border: 0;
+  height: auto;
+  max-width: 100%;
+  padding-right: 1.5rem;
+}
+
+.kids-h1 {
+  font-size: var(--landing-h1);
+  font-weight: var(--font-weight-500);
+  color: var(--btn-white);
+}
+
+.kids-h2 {
+  font-size: 1.5rem;
+  font-family: var(--font-family-sans);
+  font-weight: var(--font-weight-400);
+  color: var(--btn-white);
+  margin: 0.75em 0 0.25em;
+}
+
+/* landing page frequent */
+
+.top-h1 {
+  font-size: var(--landing-h1);
+  font-weight: var(--font-weight-700);
+  color: var(--btn-white);
+  text-align: center;
+}
+
+.fq-btn {
+  padding-top: 5px;
+  color: var(--btn-white);
+}
+
+.font-fq {
+  color: var(--btn-white);
+  font-size: var(--landing-p);
+}
+
+.font-fq-add {
+  transform: translateY(-50%) rotate(-45deg);
+  color: var(--btn-white);
+  font-size: var(--landing-p);
+  position: relative;
+  top: 0.6rem;
+}
+.fq-holder {
+  margin: 0 0 8px;
+  border: 0;
+  font-weight: 400;
+  padding: 1.2rem 2rem;
+  position: relative;
+  width: 65%;
+  background-color: #303030;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.fq-p-head,
+.fq-content {
+  color: var(--btn-white);
+  font-size: var(--landing-p);
+}
+
+.fq-content {
+  margin-bottom: 2px;
+  top: -6px;
+  border: 0;
+  font-weight: 400;
+  padding: 1.2rem 2rem;
+  position: relative;
+  width: 65%;
+  background-color: #303030;
+}
+
+.content-p {
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  padding-right: 1rem;
+}
+
+.p-2 {
+  padding-top: 0rem;
+}
+.fq-content {
+  background: #303030;
+  display: block;
+  text-align: left;
+  overflow: hidden;
+  max-height: 1200px;
+  transition: max-height 0.25s cubic-bezier(0.5, 0, 0.1, 1);
+  visibility: visible;
+  margin-top: 0rem;
+}
+
+.fq-content-hidden {
+  max-height: 0;
+  margin-bottom: 0rem;
+  visibility: hidden;
+}
+
+/* landing page footer */
+.q-cs {
+  font-size: 0.9em;
+  color: var(--footer-grey);
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: var(--font-weight-500);
+  font-family: var(--font-family-sans);
+}
+
+.q-cs:hover {
+  text-decoration: underline;
+}
+
+.ft-p {
+  font-size: 13px;
+  margin-top: 24px;
+  color: var(--footer-grey);
+}
+
+.ext-ul li {
+  list-style: none;
+  box-sizing: border-box;
+  margin-bottom: 14px;
+  padding: 0 12px 0 0;
+  vertical-align: top;
+}
+
+.ext-ul li a {
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: var(--font-weight-500);
+  color: var(--footer-grey);
+}
+
+.ext-ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-hold {
+  display: flex;
+  justify-content: center;
+  padding-left: 4rem;
+}
+
+/* Registration Page */
+.registration-nav-btn {
+  background-color: var(--btn-white);
+  color: var(--register-btn);
+  font-size: 19px;
+  border: none;
+  padding: 7px 17px;
+  border: none;
+  cursor: pointer;
+  font-family: var(--font-family-segeo);
+  font-weight: var(--font-weight-700);
+}
+
+.registration-nav-btn:hover {
+  text-decoration: underline;
+}
+
+.registration-logo {
+  max-width: 100%;
+}
+
+.register-icon {
+  margin: 100px 0 20px;
+  width: 260px;
+  background: url(https://assets.nflxext.com/ffe/siteui/acquisition/simplicity/Devices.png)
+    no-repeat 50% 50%;
+  background-size: 260px;
+  height: 90px;
+}
+
+.register-text {
+  font-size: 13px;
+  font-family: var(--font-family-segeo);
+  color: var(--register-btn);
+}
+
+.register-h1 {
+  font-size: 32px;
+  text-align: center;
+  margin: 0 0 0.4em;
+  font-family: var(--font-family-segeo);
+  font-weight: var(--font-weight-700);
+  color: var(--register-btn);
+}
+
+.register-text-contain {
+  max-width: 360px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.register-p {
+  font-size: 18px;
+  color: var(--register-btn);
+  font-family: var(--font-family-segeo);
+  font-weight: var(--font-weight-500);
+  text-align: center;
+  max-width: 300px;
+  margin-bottom: 1.5rem;
+}
+
+.register-btn {
+  border-radius: 4px;
+  font-size: 24px;
+  font-weight: 400;
+  min-height: 64px;
+  background-color: #f6121d;
+  padding: 20.5px 2em;
+  width: 100%;
+  border: none;
+  color: var(--btn-white);
+  cursor: pointer;
+}
+
+.register-btn:hover {
+  background-color: var(--btn-red);
+}
+
+.link-btn-reg {
+  text-decoration: none;
+  color: var(--btn-white);
+}
+
+.reg-txt {
+  text-align: left;
+  max-width: 400px;
+}
+
+.reg-txt-2 {
+  text-align: left;
+  max-width: 370px;
+  line-height: 1.6em;
+}
+
+.reg-contain {
+  display: block;
+  max-width: 440px;
+}
+
+.reg-input {
+  appearance: none;
+  border: 1px solid #8c8c8c;
+  border-radius: 2px;
+  box-sizing: border-box;
+  color: #000;
+  display: block;
+  font-size: 16px;
+  width: 100%;
+  height: 60px;
+}
+.reg-input:focus {
+  border-color: var();
+}
+
+.cta-b-reg {
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+
+.checkbox-reg {
+  border-bottom: 4px solid;
+  border-left: 4px solid;
+  color: var(--footer-grey);
+  height: 27px;
+  width: 44px;
+  position: relative;
+  left: -0.5rem;
+  border: 5px solid var(--footer-grey);
+  background-color: var(--btn-white);
+  margin: 8px 0;
+}
+
+.checkbox-reg:focus {
+  border-color: var(--checkblue);
+}
+
+.checkbox-label {
+  position: absolute;
+  margin-top: 0px;
+}
+@media screen and (max-width: 1200px) {
+  .download-img {
+    padding-left: 2.5rem;
+  }
+}
+@media screen and (max-width: 1000px) {
+  /* landing page enjoy */
+  .enjoy-h1,
+  .dn-h1,
+  .watch-h1,
+  .kids-h1,
+  .top-h1 {
+    font-size: 2.6rem;
+    font-weight: 700;
+  }
+
+  .enjoy-p,
+  .dn-h2,
+  .watch-h2,
+  .kids-h2 {
+    font-size: 1.3rem;
+  }
+}
+@media screen and (max-width: 950px) {
+  /* landing page */
+  .email-holder-contain {
+    width: 43rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .landing-email-btn {
+    min-height: 40px;
+    font-size: var(--btn-font-text-1);
+    padding: 0 1rem;
+    margin-top: 1.5rem;
+  }
+
+  .landing-email-input {
+    min-height: 40px;
+  }
+
+  .holder {
+    padding-top: 5rem;
+  }
+  .s-email {
+    font-size: var(--btn-font-text-2);
+  }
+
+  .cta-b {
+    width: 100%;
+  }
+  .holder-3 {
+    display: flex;
+    justify-content: center;
+  }
+  .landing-p-2 {
+    width: 25rem;
+  }
+
+  .email-holder-contain {
+    width: 28rem;
+  }
+
+  .enjoy-h1,
+  .dn-h1,
+  .watch-h1,
+  .kids-h1,
+  .top-h1 {
+    text-align: center;
+    font-size: 2.4rem;
+  }
+
+  .enjoy-p,
+  .dn-h2,
+  .watch-h2,
+  .kids-h2 {
+    text-align: center;
+    font-size: 1.2rem;
+  }
+
+  /* landing page download */
+  .download-animate {
+    left: 50%;
+  }
+
+  .text-0 {
+    font-size: 0.9em;
+  }
+
+  .text-1 {
+    font-size: 0.75em;
+  }
+  .small-img {
+    height: 2.8em;
+  }
+  .download-img {
+    padding-left: 0rem;
+  }
+  .download-animate {
+    bottom: 5%;
+  }
+
+  .download-card-custom {
+    height: 2.8em;
+  }
+
+  /* kids */
+  .kids-img {
+    padding-right: 0rem;
+  }
+
+  /* frequently */
+  .fq-holder {
+    padding: 1rem 2rem;
+    width: 90%;
+  }
+
+  .fq-p-head,
+  .fq-content {
+    color: var(--btn-white);
+    font-size: var(--landing-p-2);
+  }
+
+  .font-fq,
+  .font-fq-add {
+    font-size: var(--landing-p-2);
+  }
+
+  .fq-content {
+    padding: 1rem 2rem;
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  /* landing page */
+  .email-holder-contain {
+    padding: 0;
+  }
+
+  .email-holder {
+    width: 100%;
+  }
+
+  /* landing page download */
+  .text-0 {
+    font-size: 0.9em;
+  }
+
+  .text-1 {
+    font-size: 0.75em;
+  }
+
+  /* landing page footer */
+  .footer-hold {
+    padding-left: 0rem;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  /* landing page */
+  .landing-p-2 {
+    font-size: 1rem;
+  }
+
+  /* landing page download */
+  .download-animate {
+    left: 50%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .landing-h1 {
+    font-size: 1.75rem;
+  }
+
+  .landing-p {
+    font-size: 1rem;
+  }
+
+  .holder {
+    padding-top: 3rem;
+  }
+
+  .landing-nav-btn {
+    padding: 0.25rem 0.5rem;
+  }
+
+  /* landing page donwload */
+  .enjoy-h1,
+  .dn-h1,
+  .watch-h1,
+  .kids-h1,
+  .top-h1 {
+    font-size: 1.625rem;
+  }
+
+  .enjoy-p,
+  .dn-h2,
+  .watch-h2,
+  .kids-h2 {
+    font-size: 1.125rem;
+  }
+
+  .dn-h1,
+  .dn-h2 {
+    width: 100%;
+  }
+
+  .dn-h1 {
+    padding-bottom: 0.5rem;
+  }
+
+  .text-0 {
+    font-size: 0.9em;
+  }
+
+  .text-1 {
+    font-size: 0.75em;
+  }
+  .small-img {
+    height: 2.8em;
+  }
+
+  .download-animate {
+    width: 75%;
+    bottom: 5%;
+  }
+
+  .download-card-custom {
+    height: 2.8em;
+  }
+
+  /* frequently */
+  .fq-holder {
+    padding: 1rem 2rem;
+    width: 100%;
+  }
+
+  .fq-p-head,
+  .fq-content {
+    color: var(--btn-white);
+    font-size: var(--landing-p-2);
+  }
+
+  .font-fq,
+  .font-fq-add {
+    font-size: var(--landing-p-2);
+  }
+
+  .fq-content {
+    padding: 1rem 2rem;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  /* landing page */
+  .email-holder-contain {
+    width: 100%;
+  }
+
+  .landing-p-2 {
+    width: 100%;
+  }
+
+  .holder {
+    width: 100%;
+  }
+
+  /* landing page download*/
+  .small-img {
+    height: 2.5em;
+  }
+
+  .download-animate {
+    width: 75%;
+    bottom: 3%;
+  }
+
+  .download-card-custom {
+    height: 2.5em;
+  }
+
+  /* registration page */
+  .registration-nav-btn {
+    font-size: 14px;
+  }
+
+  .register-text-contain {
+    display: block;
+  }
+
+  .register-p,
+  .register-h1,
+  .reg-txt {
+    text-align: start;
+  }
+}
+
+@media screen and (width: 280px) and (height: 653px) {
+  /* landing page download*/
+  .small-img {
+    height: 1.5em;
+  }
+
+  .download-animate {
+    width: 8rem;
+    bottom: 3%;
+  }
+
+  .download-card-custom {
+    height: 1.5em;
+  }
+  .text-1 {
+    font-size: 0.5em;
+  }
+
+  .text-0 {
+    font-size: 0.75em;
+  }
+}

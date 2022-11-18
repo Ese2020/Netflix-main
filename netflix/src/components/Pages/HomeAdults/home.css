@@ -1,0 +1,31 @@
+.grid-card:hover {
+    cursor: pointer;
+    width: 120%;
+    transition: 3s ease-in-out;
+}
+
+.banner-text {
+    font-weight: 600;
+}
+
+.pri-btn:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.pri-btn2:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.card {
+    overflow: hidden;
+    height: 35vh;
+}
+
+/* .card img:hover {
+    width: 250px;
+    animation-name: ease;
+    animation-duration: 3s;
+    transform-origin: center;
+} */
